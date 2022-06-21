@@ -23,6 +23,9 @@ namespace Homework01
                 case 1:
                     HW01Task01();
                     break;
+                case 2:
+                    HW01Task02();
+                    break;
 
                 case 0:
                     Console.WriteLine("Завершение работы приложения ...");
@@ -82,6 +85,14 @@ namespace Homework01
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Вычислите асимптотическую сложность функции из примера ниже
+        /// </summary>
+        public static void HW01Task02()
+        {
+            Console.WriteLine("асимптотическая сложность O(N^3)");
+            Console.ReadKey(true);
+        }
 
     }
 }
