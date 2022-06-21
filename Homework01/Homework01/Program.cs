@@ -14,6 +14,7 @@ namespace Homework01
             Console.WriteLine("======================");
             Console.WriteLine("1 -> Задача 1");
             Console.WriteLine("2 -> Задача 2");
+            Console.WriteLine("3 -> Задача 3");
             Console.WriteLine("0 -> Заврешение работы приложения");
             Console.WriteLine("======================");
             Console.Write("Введите номер задачи ");
@@ -25,6 +26,9 @@ namespace Homework01
                     break;
                 case 2:
                     HW01Task02();
+                    break;
+                case 3:
+                    HW01Task03();
                     break;
 
                 case 0:
@@ -92,6 +96,76 @@ namespace Homework01
         {
             Console.WriteLine("асимптотическая сложность O(N^3)");
             Console.ReadKey(true);
+        }
+
+        /// <summary>
+        /// Метод вычисления числа Фибоначчи через цикл
+        /// </summary>
+        /// <param name="counter">порядковый номер элемента</param>
+        /// <returns></returns>
+        public static int GetFibonacciNumber(int counter)
+        {
+            int result;
+            if (counter == 0)
+            {
+                result = 0;
+            }
+            else if (counter == 1)
+            {
+                result = 1;
+            }
+            else
+            {
+                int currentNumber = 1;
+                int previousNumber = 0;
+                int nextNumber = 0;
+
+                for (int i = 2; i <= counter; i++)
+                {
+                    nextNumber = currentNumber + previousNumber;
+                    previousNumber = currentNumber;
+                    currentNumber = nextNumber;
+                }
+                result = nextNumber;
+            }
+            return result;
+
+        }
+        /// <summary>
+        /// Метод вычисления числа Фибоначчи через рекурсию
+        /// </summary>
+        /// <param порядковый номер элемента="_counter"></param>
+        /// <returns></returns>
+        public static int GetFibonacciNumberRecursion(int counter)
+        {
+
+            int result;
+            if (counter == 0)
+            {
+                result = 0;
+            }
+            else if (counter == 1)
+            {
+                result = 1;
+            }
+            else
+            {
+                result = GetFibonacciNumberRecursion(counter - 2) + GetFibonacciNumberRecursion(counter - 1);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Запись решения фибоначчи
+        /// </summary>
+        public static void HW01Task03()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine($"Число Фибоначчи с индексом {i}. Подсчет через цикл. Число - {GetFibonacciNumber(i)}");
+                Console.WriteLine($"Число Фибоначчи с индексом {i}. Подсчет через рекурсию. Число - {GetFibonacciNumberRecursion(i)}");
+            }
+            Console.ReadKey();
         }
 
     }
