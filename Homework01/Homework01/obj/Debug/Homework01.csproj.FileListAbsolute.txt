@@ -1,0 +1,8 @@
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\bin\Debug\Homework01.exe.config
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\bin\Debug\Homework01.exe
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\bin\Debug\Homework01.pdb
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\obj\Debug\Homework01.csproj.AssemblyReference.cache
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\obj\Debug\Homework01.csproj.SuggestedBindingRedirects.cache
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\obj\Debug\Homework01.csproj.CoreCompileInputs.cache
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\obj\Debug\Homework01.exe
+C:\GeekBrains\Algoritms C#\Homeworks\Algoritms_C_sharp\Homework01\Homework01\obj\Debug\Homework01.pdb
